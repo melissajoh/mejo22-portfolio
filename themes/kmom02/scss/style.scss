@@ -1,0 +1,32 @@
+/*
+* Style sheet for kmom02 theme
+*/
+
+// Imports for icons from fontawesome
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+// Import files
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'typography';
+
+@import 'blockquotes';
+@import 'code';
+
+// Code
+body {
+    background-color: $background-color;
+}
+
+* {
+    color: $font-color;
+}
+
+.footer a {
+    text-decoration: none;
+}
