@@ -6,6 +6,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@500&family=Rye&display=swap");
 .fa,
 .fas,
 .far,
@@ -6495,12 +6496,44 @@ pre code {
   line-height: 1.4;
 }
 
+/*
+* Stylesheet for test.md
+*/
+.old-fashioned {
+  background: DarkGray;
+  color: #fff;
+  font-family: "Rye", cursive;
+  color: #333;
+}
+.old-fashioned span {
+  font-size: 1.2em;
+  font-style: italic;
+  color: green;
+}
+
+.modern {
+  background: white;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.4;
+}
+
+.worst-ever {
+  background: blue;
+  color: #fff;
+  font-family: "Monoton", cursive;
+  color: grey;
+}
+
 body {
   background-color: rgb(156, 189, 188);
 }
 
 * {
-  color: #000;
+  color: #333;
 }
 
 .footer a {

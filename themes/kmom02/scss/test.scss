@@ -1,0 +1,44 @@
+/*
+* Stylesheet for test.md
+*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@500&family=Rye&display=swap');
+
+// Variables
+$font-color: #333;
+$font-size: 1.2em;
+$base-line-height: 1.4;
+// Could add more variables, like for the fonts
+
+// Mixin just to try the concept
+@mixin theme($theme: DarkGray) {
+    background: $theme;
+    color: #fff;
+}
+// Could add mixin for variables that are used in several places
+
+.old-fashioned {
+    @include theme;
+    font-family: 'Rye', cursive;
+    color: $font-color;
+
+    span {
+        font-size: $font-size;
+        font-style: italic;
+        color: green;
+    }
+}
+
+.modern {
+    @include theme($theme: white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: $font-size;
+    color: $font-color;
+    line-height: $base-line-height;
+}
+
+.worst-ever {
+    @include theme($theme: blue);
+    font-family: 'Monoton', cursive;
+    color: grey;
+}
