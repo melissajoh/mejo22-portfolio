@@ -24,7 +24,7 @@ $base-line-height: 1.4;
     span {
         font-size: $font-size;
         font-style: italic;
-        color: green;
+        color: rgb(2, 126, 2);
     }
 }
 
@@ -40,5 +40,5 @@ $base-line-height: 1.4;
 .worst-ever {
     @include theme($theme: blue);
     font-family: 'Monoton', cursive;
-    color: grey;
+    color: rgb(128, 128, 128);
 }
