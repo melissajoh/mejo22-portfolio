@@ -47,7 +47,21 @@
 
 /* Nav */
 .nav {
+    // position: relative;
+
     a {
         color: $font-color;
+        text-decoration: none;
     }
+
+
+    .navicon {
+        font-size: 2em;
+        vertical-align: top;
+        // position: absolute;
+        // top: 1%;
+        // text-align: center;
+        //left: 3%;
+    }
+
 }

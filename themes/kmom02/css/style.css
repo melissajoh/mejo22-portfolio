@@ -6628,6 +6628,11 @@ em > img {
 /* Nav */
 .nav a {
   color: #333;
+  text-decoration: none;
+}
+.nav .navicon {
+  font-size: 2em;
+  vertical-align: top;
 }
 
 /*
@@ -6653,4 +6658,7 @@ em > img {
 .footer div p {
   font-size: small;
   color: rgba(255, 255, 255, 0.8);
+}
+.footer .smalltext {
+  font-size: 0.5em;
 }
