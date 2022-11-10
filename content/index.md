@@ -1,7 +1,8 @@
 ---
 Title: Hem
 Description: Detta är index-sidan
-# icon: fas fa-home
+#icon: ⌂
+icon: fas fa-home
 ---
 
 Hem
