@@ -6508,7 +6508,7 @@ pre code {
 .old-fashioned span {
   font-size: 1.2em;
   font-style: italic;
-  color: green;
+  color: rgb(2, 126, 2);
 }
 
 .modern {
@@ -6525,17 +6525,132 @@ pre code {
   background: blue;
   color: #fff;
   font-family: "Monoton", cursive;
-  color: grey;
+  color: rgb(128, 128, 128);
+}
+
+/*
+* Stylesheet for main elments
+*/
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+html {
+  background-color: rgb(87, 110, 109);
 }
 
 body {
+  margin-top: -2em;
   background-color: rgb(156, 189, 188);
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.4;
+  overflow-x: hidden;
 }
 
-* {
+.main {
+  max-width: 800px;
+  margin: auto;
+  flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.4rem;
+  font-weight: bold;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+em > img {
+  width: 400px;
+  margin-top: 2em;
+}
+
+/*
+* Stylesheet for header
+*/
+.header,
+.site-header {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+  padding-top: 2em;
+}
+
+/* Title */
+.title,
+.logo {
+  padding: 3em 3em 0 0;
+}
+
+@media (max-width: 767px) {
+  .title,
+  .logo {
+    padding: 1em 1em 1em 0;
+  }
+  .title {
+    min-width: 50%;
+  }
+  .logo {
+    max-width: 30%;
+  }
+}
+.title * {
+  color: #333;
+  margin-top: -0.3em;
+  margin-bottom: 0.5em;
+}
+.title p {
+  font-style: italic;
+}
+
+/* Nav */
+.nav a {
   color: #333;
 }
 
+/*
+* Stylesheet for footer
+*/
+.footer {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+  margin-top: 5em;
+  border-top: 1px solid #222;
+  background-color: rgb(87, 110, 109);
+  color: #fff;
+}
 .footer a {
+  color: #fff;
   text-decoration: none;
+}
+.footer .social {
+  font-size: 2rem;
+}
+.footer div p {
+  font-size: small;
+  color: rgba(255, 255, 255, 0.8);
 }
