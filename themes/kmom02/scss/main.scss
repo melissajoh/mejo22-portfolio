@@ -1,0 +1,58 @@
+/*
+* Stylesheet for main elments
+*/
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html {
+    background-color: $accent-color;
+}
+
+body {
+    margin-top: -2em;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: sans-serif;
+    line-height: $base-line-height;
+    overflow-x: hidden;
+}
+
+.main {
+    max-width: 800px;
+    margin: auto;
+    flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: $magic-number;
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+}
+
+em > img {
+    width: 400px;
+    margin-top: 2em;
+}
