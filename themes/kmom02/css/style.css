@@ -6442,6 +6442,11 @@ h1 {
   font-weight: bold;
 }
 
+h2,
+h3 {
+  font-family: "Bitter", serif;
+}
+
 p {
   font-size: 1rem;
   margin-bottom: 1.4rem;
@@ -6528,6 +6533,193 @@ pre code {
   color: rgb(128, 128, 128);
 }
 
+/*
+* Style for technology pages
+*/
+/* -- Code for technologies.twig -- */
+.technologies {
+  display: grid;
+  gap: 1em;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-rows: 100px repeat(6, 150px) 200px;
+}
+
+.technologies h1 {
+  grid-column: span 3;
+}
+
+.tech-box {
+  border: 1px solid rgb(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.tech-box img {
+  width: 100%;
+}
+.tech-box h2 {
+  width: 100%;
+  padding: 1em;
+  position: absolute;
+}
+.tech-box a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.tech-box:hover {
+  box-shadow: 5px 5px 10px rgba(82, 82, 82, 0.7);
+}
+
+.css {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.css h2 {
+  background-color: rgba(0, 164, 225, 0.7);
+  top: 0;
+  left: 0;
+}
+.css img {
+  height: 100%;
+}
+
+.git {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.git h2 {
+  background-color: rgba(239, 84, 57, 0.7);
+  background-image: linear-gradient(to right, rgba(239, 84, 57, 0.7), rgba(243, 109, 47, 0.7));
+  top: 0;
+  left: 0;
+}
+
+.html {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.html h2 {
+  background-color: rgba(255, 51, 54, 0.7);
+  background-image: linear-gradient(to right, rgba(255, 51, 54, 0.7), rgba(235, 133, 63, 0.7));
+  top: 0;
+  left: 0;
+}
+
+.javascript {
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+.javascript h2 {
+  background-color: rgba(252, 220, 0, 0.7);
+  background-image: linear-gradient(to right, rgba(235, 34, 107, 0.7), rgba(252, 220, 0, 0.7), rgba(253, 230, 78, 0.7));
+  top: 0;
+  left: 0;
+}
+
+.php {
+  grid-column: 3/3;
+  grid-row: 4/8;
+}
+.php h2 {
+  background-color: rgba(122, 134, 184, 0.7);
+  background-image: linear-gradient(to right, rgba(122, 134, 184, 0.7), rgba(91, 106, 167, 0.7));
+  top: 0;
+  left: 0;
+}
+.php img {
+  width: auto;
+  height: 100%;
+}
+
+.python {
+  grid-column: 1/3;
+  grid-row: 6/8;
+}
+.python h2 {
+  background-color: rgba(59, 119, 171, 0.7);
+  background-image: linear-gradient(to right, rgba(29, 64, 93, 0.7), rgba(59, 119, 171, 0.7), rgba(246, 204, 17, 0.7));
+  top: 0;
+  left: 0;
+}
+.python img {
+  height: 100%;
+}
+
+.sqlite {
+  grid-column: span 3;
+  grid-row: 8/9;
+}
+.sqlite h2 {
+  background-color: rgba(84, 169, 220, 0.7);
+  top: 0;
+  left: 0;
+}
+
+/* -- Responsiveness for technologies.twig -- */
+@media (max-width: 767px) {
+  .technologies h1 {
+    grid-column: span 1;
+    justify-self: center;
+  }
+  .css {
+    grid-column: span 1;
+    grid-row: 2/4;
+  }
+  .git {
+    grid-column: span 1;
+    grid-row: 4/6;
+  }
+  .html {
+    grid-column: span 1;
+    grid-row: 6/8;
+  }
+  .javascript {
+    grid-column: span 1;
+    grid-row: 8/10;
+  }
+  .javascript img {
+    height: 100%;
+  }
+  .php {
+    grid-column: span 1;
+    grid-row: 10/14;
+  }
+  .python {
+    grid-column: span 1;
+    grid-row: 14/16;
+  }
+  .sqlite {
+    grid-column: span 1;
+    grid-row: 16/17;
+  }
+  .sqlite img {
+    height: 100%;
+  }
+}
+/* -- Code for technology.twig -- */
+.technology {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr;
+}
+
+.side-bar ul {
+  margin-top: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+  line-height: 2;
+}
+
+/* -- Responsiveness for technology.twig -- */
+@media (max-width: 767px) {
+  .side-bar {
+    display: none;
+  }
+  .technology {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 /*
 * Stylesheet for main elments
 */
