@@ -1,0 +1,20 @@
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    margin-top: 5em;
+    border-top: 1px solid #222;
+    background-color: rgb(87, 110, 109);
+    color: rgb(255, 255, 255);
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer .social {
+    font-size: 2rem;
+}

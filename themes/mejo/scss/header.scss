@@ -1,0 +1,31 @@
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header,
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+/* Nav */
+/* For exercise from lecture (change background of first and last nav-link) 
+.nav li:first-child {
+    background-color: beige;
+}
+
+.nav li:first-child:hover {
+    background-color: bisque;
+}
+
+.nav li:last-child {
+    background-color: aquamarine;
+}
+
+.nav li:last-child:hover {
+    background-color: aqua;
+} */
