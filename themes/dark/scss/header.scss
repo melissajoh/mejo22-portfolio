@@ -1,0 +1,68 @@
+/*
+* Stylesheet for header
+*/
+
+.header,
+.site-header {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+    //padding-top: 2em;
+    padding: 2em;
+}
+
+/* Title */
+
+.title,
+.logo {
+    padding: 2em 2em 0 0;
+}
+
+@media (max-width: 767px) {
+    .title,
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .title {
+        min-width: 50%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title {
+    * {
+        color: $font-color;
+        margin-top: -0.3em;
+        margin-bottom: 0.5em;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+/* Nav */
+.nav {
+    // position: relative;
+
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
+
+
+    .navicon {
+        font-size: 2em;
+        vertical-align: top;
+        // position: absolute;
+        // top: 1%;
+        // text-align: center;
+        //left: 3%;
+    }
+
+}

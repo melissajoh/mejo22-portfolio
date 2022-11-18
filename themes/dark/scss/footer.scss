@@ -1,0 +1,44 @@
+/*
+* Stylesheet for footer
+*/
+
+.footer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    margin-top: 5em;
+    //border-top: 1px solid #222;
+    background-color: $accent-color;
+    color: $font-alternative-color;
+
+    a {
+        color: $font-alternative-color;
+        text-decoration: none;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+
+    div p {
+        font-size: small;
+        color: rgba($font-alternative-color, 0.8);
+    }
+
+    .smalltext {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        display: block;
+
+        .social {
+            a {
+                display: block;
+            }
+        }
+    }
+}
