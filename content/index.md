@@ -8,8 +8,8 @@ icon: fas fa-home
 Hem
 ==========================
 
-<div class="mePage">
-<div class="meText">
+<div class="mepage">
+<div class="metext">
 <p>Hej! 
 <br>
 <br>
@@ -20,7 +20,7 @@ Går nu distanslinjen i Webb-programmering och har innan studerat på distans i 
 <p>
 </div>
 
-<div class="meImg">
+<div class="meimg">
 <!-- *![me](%assets_url%/img/me2.jpg)* -->
 <img src="%assets_url%/img/me2.jpg" alt="Image of me">
 </div>
