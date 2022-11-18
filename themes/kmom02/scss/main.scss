@@ -57,6 +57,7 @@ em > img {
     margin-top: 2em;
 }
 
+/* -- Index page -- */
 .mepage {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -72,4 +73,21 @@ em > img {
     padding-left: 1em;
     grid-column: 2 / 3;
     grid-row: 1 / 1;
+}
+
+/* Responsiveness for index page */
+@media (max-width: 767px) {
+    .mepage {
+        grid-template-columns: 1fr;
+    }
+
+    .meimg {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .metext {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
 }
