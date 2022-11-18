@@ -6777,18 +6777,18 @@ em > img {
   margin-top: 2em;
 }
 
-.mePage {
+.mepage {
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 1em;
 }
 
-.meImg {
+.meimg {
   grid-column: 1/2;
   grid-row: 1/1;
 }
 
-.meText {
+.metext {
   padding-left: 1em;
   grid-column: 2/3;
   grid-row: 1/1;
@@ -6802,7 +6802,7 @@ em > img {
   flex: 0 0 auto;
   display: flex;
   justify-content: space-between;
-  margin: 1em 0 0 0;
+  margin: 1em 0 0;
   padding: 2em;
 }
 
