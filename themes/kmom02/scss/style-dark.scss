@@ -11,7 +11,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 // Import files
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
+@import 'variables-dark';
 
 @import 'typography';
 
@@ -21,8 +21,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'test';
 
 @import 'technologies';
-@import 'analysis';
 
 @import 'main';
+@import 'dark-images';
 @import 'header';
 @import 'footer';

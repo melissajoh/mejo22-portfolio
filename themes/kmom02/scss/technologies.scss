@@ -30,6 +30,7 @@
         width: 100%;
         padding: 1em;
         position: absolute;
+        z-index: 1;
     }
 
     a {
@@ -39,7 +40,7 @@
 }
 
 .tech-box:hover {
-    box-shadow: 5px 5px 10px rgba(82, 82, 82, 0.7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .css {

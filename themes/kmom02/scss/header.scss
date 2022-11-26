@@ -12,6 +12,12 @@
     padding: 2em;
 }
 
+.header {
+    border-bottom: 5px solid $dark-color;
+    background-color: $accent-color;
+    margin-bottom: 5em;
+}
+
 /* Title */
 
 .title,
@@ -36,7 +42,7 @@
 
 .title {
     * {
-        color: $font-color;
+        color: $font-alternative-color;
         margin-top: -0.3em;
         margin-bottom: 0.5em;
     }
@@ -51,7 +57,7 @@
     // position: relative;
 
     a {
-        color: $font-color;
+        color: $font-alternative-color;
         text-decoration: none;
     }
 

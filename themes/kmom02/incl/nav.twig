@@ -1,6 +1,12 @@
 <div class="header" role="banner">
     <div class="site-header">
-        {% if pages["_meta"].meta.logo %}
+        {% if config.session.theme == "dark" %}
+        <div class="logo">
+            <a href="{{ base_url }}">
+                <img src="{{ base_url }}/assets/img/logo_vit.png" alt="logo image" />
+            </a>
+        </div>
+        {% elseif pages["_meta"].meta.logo %}
         <div class="logo">
             <a href="{{ base_url }}">
                 <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="logo image" />

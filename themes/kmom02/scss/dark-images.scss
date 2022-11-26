@@ -1,0 +1,7 @@
+img {
+    filter: hue-rotate(90deg) brightness(0.8) contrast(1.2);
+}
+
+.no-hue-rotation {
+    filter: brightness(0.8) contrast(1.2);
+}

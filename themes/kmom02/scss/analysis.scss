@@ -1,0 +1,77 @@
+.analysis {
+    display: grid;
+    gap: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    //grid-template-columns: 300px 300px 300px;
+    //grid-template-rows: 100px repeat(6, 150px) 200px;
+}
+
+.analysis h1 {
+    grid-column: span 3;
+    //justify-self: center;
+}
+
+.analysis-box {
+    //border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        //z-index: -1;
+    }
+
+    h2 {
+        width: 100%;
+        padding: 0.5em;
+        position: absolute;
+        z-index: 10;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.analysis-box:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.colors {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+
+    h2 {
+        background-color: rgba(156, 189, 188, 0.7);
+        top: 0;
+        left: 0;
+    }
+}
+
+.load {
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+
+    h2 {
+        background-color: rgba(156, 189, 188, 0.7);
+        //background-image: linear-gradient(to right, rgba(239, 84, 57, 0.7), rgba(243, 109, 47, 0.7));
+        top: 0;
+        left: 0;
+    }
+}
+
+
+.design {
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+
+    h2 {
+        background-color: rgba(156, 189, 188, 0.7);
+        //background-image: linear-gradient(to right, rgba(255, 51, 54, 0.7), rgba(235, 133, 63, 0.7));
+        top: 0;
+        left: 0;
+    }
+}

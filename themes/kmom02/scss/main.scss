@@ -19,7 +19,7 @@ ul {
 }
 
 html {
-    background-color: $accent-color;
+    background-color: $dark-color;
 }
 
 body {
@@ -50,6 +50,12 @@ h6 {
 /* Images */
 img {
     max-width: 100%;
+    filter: grayscale(10%) contrast(0.9);
+    //filter: hue-rotate(90deg);
+}
+
+.no-hue-rotation {
+    filter: none;
 }
 
 em > img {
