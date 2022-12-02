@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99bc88988bd68da6ffcc6b66edb22392",
+    "content-hash": "db68928c32325b44ae6c7db95683bc44",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -50,10 +50,6 @@
                 "markdown",
                 "parser"
             ],
-            "support": {
-                "issues": "https://github.com/erusev/parsedown/issues",
-                "source": "https://github.com/erusev/parsedown/tree/1.8.0-beta-7"
-            },
             "time": "2019-03-17T18:47:21+00:00"
         },
         {
@@ -104,10 +100,6 @@
                 "parsedown",
                 "parser"
             ],
-            "support": {
-                "issues": "https://github.com/erusev/parsedown-extra/issues",
-                "source": "https://github.com/erusev/parsedown-extra/tree/0.8.0"
-            },
             "time": "2019-12-29T11:14:16+00:00"
         },
         {
@@ -206,8 +198,8 @@
             "autoload": {
                 "psr-0": {
                     "Pico": "lib/",
-                    "PicoPluginInterface": "lib/",
-                    "AbstractPicoPlugin": "lib/"
+                    "AbstractPicoPlugin": "lib/",
+                    "PicoPluginInterface": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -251,11 +243,6 @@
                 "website",
                 "yaml"
             ],
-            "support": {
-                "docs": "http://picocms.org/docs",
-                "issues": "https://github.com/picocms/Pico/issues",
-                "source": "https://github.com/picocms/Pico"
-            },
             "time": "2019-11-24T23:43:58+00:00"
         },
         {
@@ -385,9 +372,6 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/yaml/tree/v2.8.52"
-            },
             "time": "2018-11-11T11:18:13+00:00"
         },
         {
@@ -452,10 +436,6 @@
             "keywords": [
                 "templating"
             ],
-            "support": {
-                "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v1.44.7"
-            },
             "funding": [
                 {
                     "url": "https://github.com/fabpot",
