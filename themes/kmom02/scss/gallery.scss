@@ -1,0 +1,222 @@
+/*
+* Style for gallery
+*/
+
+.gallery {
+    display: grid;
+    gap: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6em;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px repeat(3, 300px);
+}
+
+.gallery h1 {
+    grid-column: span 3;
+    //justify-self: center;
+}
+
+.gallery-box {
+    position: relative;
+    overflow: hidden;
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.gallery-box:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.img1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.img2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.img3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.img4 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.img5 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.img6 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.img7 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.img8 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.img9 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+/* -- Responsiveness for technologies.twig -- */
+@media (max-width: 1100px) {
+    .gallery {
+        grid-template-columns: 300px 300px;
+        //grid-template-rows: 100px repeat(9, 250px);
+    }
+
+    .gallery h1 {
+        grid-column: span 1;
+        justify-self: center;
+    }
+
+    .img1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .img2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .img3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+
+    .img4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .img5 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .img6 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .img7 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .img8 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    .img9 {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+}
+
+@media (max-width: 667px) {
+    .gallery {
+        grid-template-columns: auto;
+        //grid-template-rows: 100px repeat(9, 300px);
+    }
+
+    .gallery h1 {
+        grid-column: span 1;
+        justify-self: center;
+    }
+
+    .img1 {
+        grid-column: span 1;
+        grid-row: 2 / 3;
+    }
+
+    .img2 {
+        grid-column: span 1;
+        grid-row: 3 / 4;
+    }
+
+    .img3 {
+        grid-column: span 1;
+        grid-row: 4 / 5;
+    }
+    
+
+    .img4 {
+        grid-column: span 1;
+        grid-row: 5 / 6;
+    }
+
+    .img5 {
+        grid-column: span 1;
+        grid-row: 6 / 7;
+    }
+
+    .img6 {
+        grid-column: span 1;
+        grid-row: 7 / 8;
+    }
+
+    .img7 {
+        grid-column: span 1;
+        grid-row: 8 / 9;
+    }
+
+    .img8 {
+        grid-column: span 1;
+        grid-row: 9 / 10;
+    }
+
+    .img9 {
+        grid-column: span 1;
+        grid-row: 10 / 11;
+    }
+}
+
+
+/* -- CImage and video style -- */
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
