@@ -20,7 +20,7 @@
             </a>
         </div>
         <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
-            tabindex="1">
+            tabindex="0">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
             <span class="sr-only">Toggle Menu</span>
         </a>
@@ -30,7 +30,7 @@
             <ul>
                 {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
                     <li{% if page.id==current_page.id %} class="active" {% endif %}>
-                        <a href="{{ page.url }}">
+                        <a href="{{ page.url }}" aria-label="{{ page.title }}">
                         {% if page.meta.icon %}
                             <i class="{{ page.meta.icon }}"></i>
                             {# <span class="navicon"> {{ page.meta.icon }} </span> #}
