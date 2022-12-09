@@ -20,7 +20,7 @@ För google pagespeed har tre olika sidor på varje webbplats mätits, där Spee
 
 Förstasidan har mätits 3 gånger i devtools där medelvärdet finns i kalkylarket.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkdLxJ1Sj0oITdPxgn9YhZJnqMpNRtUdueDzdiUG0qK0C39H8-l3K7yXWa8qASf8-uTKubqSQPfjYZ/pubhtml?widget=true&amp;headers=false" class="kalkyl"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkdLxJ1Sj0oITdPxgn9YhZJnqMpNRtUdueDzdiUG0qK0C39H8-l3K7yXWa8qASf8-uTKubqSQPfjYZ/pubhtml?widget=true&amp;headers=false" class="kalkyl" title="spreadsheet"></iframe>
 
 &nbsp;
 
