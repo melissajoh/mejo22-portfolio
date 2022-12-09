@@ -3,9 +3,14 @@ Title: Test
 Description: Detta är test-sidan
 ---
 
-Test-sida
+&#8212; Test-sida &#8212;
 ==========================
-![Leaf](image/leaf_256x256.png)
+
+<div class="text">
+Denna sida har kommenterats ut.
+</div>
+
+<!-- ![Leaf](image/leaf_256x256.png)
 
 <h2>Kmom05</h2>
 
@@ -45,4 +50,4 @@ Nästa hyss han gjorde var när han i grönsakssoppan dök på huvet ner og sen 
 
 <div style="width: 50vw; height: 100px; background: red; box-sizing: border-box;"></div>
 
-<div style="width: 100vw; height: 100px; background: green; box-sizing: border-box;"></div>
+<div style="width: 100vw; height: 100px; background: green; box-sizing: border-box;"></div> -->
