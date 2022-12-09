@@ -6440,10 +6440,8 @@ body {
 .title h1 {
   font-family: "Bitter", serif;
   font-size: 2.6em;
-  background-color: #262d2d;
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba(59, 71, 71, 0.5) 3px 5px 1px;
+  color: rgba(59, 71, 71, 0.4);
+  text-shadow: #262d2d 0.6px 5px 1px;
 }
 
 .title p {

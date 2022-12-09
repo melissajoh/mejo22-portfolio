@@ -14,12 +14,13 @@ body {
 .title h1 {
     font-family: 'Bitter', serif;
     font-size: 2.6em;
-    background-color: $title-color;
-    //-webkit-background-clip: text;
-    //-moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba($accent-color, 0.5) 3px 5px 1px;
+    //background-color: $title-color;
+    color: rgba($accent-color, 0.4);
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // background-clip: text;
+    // color: transparent;
+    text-shadow: rgba($title-color, 1) 0.6px 5px 1px;
 }
 
 .title p {
