@@ -1,6 +1,6 @@
 ---
-Logo: assets/img/logo1.png
-#Logo: image/logo1.png
+#Logo: assets/img/logo1.png
+Logo: image/logo1.png
 Tagline: Portfolio
 Social:
     - title: GitHub
