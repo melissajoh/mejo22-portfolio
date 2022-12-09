@@ -3,19 +3,17 @@
     gap: 1em;
     max-width: 100%;
     margin: 0 auto;
-    //grid-template-columns: 300px 300px 300px;
-    //grid-template-rows: 100px repeat(6, 150px) 200px;
 }
 
 .analysis h1 {
     grid-column: span 3;
-    //justify-self: center;
 }
 
 .analysis-box {
-    //border: 1px solid rgb(0, 0, 0);
     position: relative;
     overflow: hidden;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+
 
     img {
         width: 100%;
@@ -24,10 +22,16 @@
     }
 
     h2 {
+        font-family: sans-serif;
+        font-size: 1.2em;
+        color: rgb(183, 223, 221);
         width: 100%;
         padding: 0.5em;
         position: absolute;
         z-index: 10;
+        padding-top: 1.3em;
+        padding-bottom: 1.3em;
+        transition: 0.5s ease;
     }
 
     a {
@@ -36,8 +40,26 @@
     }
 }
 
-.analysis-box:hover {
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: $dark-color;
+}
+
+.analysis-box:hover .overlay {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+}
+
+.analysis-box:hover h2 {
+    background-color: rgba($dark-color, 0);
 }
 
 .colors {
@@ -46,6 +68,7 @@
 
     h2 {
         background-color: rgba(156, 189, 188, 0.7);
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -58,6 +81,7 @@
     h2 {
         background-color: rgba(156, 189, 188, 0.7);
         //background-image: linear-gradient(to right, rgba(239, 84, 57, 0.7), rgba(243, 109, 47, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -71,6 +95,7 @@
     h2 {
         background-color: rgba(156, 189, 188, 0.7);
         //background-image: linear-gradient(to right, rgba(255, 51, 54, 0.7), rgba(235, 133, 63, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }

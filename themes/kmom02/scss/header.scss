@@ -6,16 +6,23 @@
 .site-header {
     flex: 0 0 auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 1em 0 0;
+    //align-items: baseline;
+    //margin: 1em 0 0;
     //padding-top: 2em;
     padding: 2em;
 }
 
 .header {
-    border-bottom: 5px solid $dark-color;
+    border-bottom: 10px solid $dark-color;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.7);
     background-color: $accent-color;
+    background-image: url('../../../assets/img/handmade-paper.png');
+    background-repeat: repeat;
     margin-bottom: 5em;
+
+
 }
 
 /* Title */
@@ -26,6 +33,19 @@
 }
 
 @media (max-width: 767px) {
+    .header {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .site-header {
+        display: inline-block;
+    }
+
+    .nav-toggle {
+        float: none;
+    }
+
     .title,
     .logo {
         padding: 1em 1em 1em 0;
@@ -50,11 +70,16 @@
     p {
         font-style: italic;
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 /* Nav */
 .nav {
     // position: relative;
+    margin-top: 3em;
 
     a {
         color: $font-alternative-color;
@@ -69,6 +94,18 @@
         // top: 1%;
         // text-align: center;
         //left: 3%;
+    }
+
+    ul li {
+        //-webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s;
+    }
+
+    ul li:hover {
+        //-webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
 }

@@ -5,3 +5,12 @@ img {
 .no-hue-rotation {
     filter: brightness(0.8) contrast(1.2);
 }
+
+.main a {
+    background: $font-color;
+}
+
+.technology .side-bar {
+    background: $font-color;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+}

@@ -8,9 +8,9 @@
     justify-content: space-between;
     padding: 3em;
     margin-top: 5em;
-    border-top: 5px solid $accent-color;
+    border-top: 10px solid $accent-color;
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.7);
     background-color: $dark-color;
-    // color: $font-alternative-color;
 
     a {
         color: $bright-color;
@@ -19,6 +19,19 @@
 
     .social {
         font-size: 2rem;
+        
+    }
+
+    i {
+        //-webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s;
+    }
+
+    i:hover {
+        //-webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
     div p {

@@ -15,22 +15,27 @@
 .technologies h1 {
     grid-column: span 3;
     //justify-self: center;
+    padding-bottom: 1.4em;
 }
 
 .tech-box {
-    //border: 1px solid rgb(0, 0, 0);
     position: relative;
     overflow: hidden;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
 
     img {
         width: 100%;
     }
 
     h2 {
+        font-family: sans-serif;
+        font-size: 1.2em;
+        color: rgb(183, 223, 221);
         width: 100%;
         padding: 1em;
         position: absolute;
         z-index: 1;
+        transition: 0.5s ease;
     }
 
     a {
@@ -39,8 +44,26 @@
     }
 }
 
-.tech-box:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: $dark-color;
+}
+
+.tech-box:hover .overlay {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+}
+
+.tech-box:hover h2 {
+    background-color: rgba($dark-color, 0);
 }
 
 .css {
@@ -48,7 +71,8 @@
     grid-row: 2 / 4;
 
     h2 {
-        background-color: rgba(0, 164, 225, 0.7);
+        // background-color: rgba(0, 164, 225, 0.7);
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -63,8 +87,8 @@
     grid-row: 2 / 4;
 
     h2 {
-        background-color: rgba(239, 84, 57, 0.7);
-        background-image: linear-gradient(to right, rgba(239, 84, 57, 0.7), rgba(243, 109, 47, 0.7));
+        // background-image: linear-gradient(to right, rgba(239, 84, 57, 0.7), rgba(243, 109, 47, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -76,8 +100,8 @@
     grid-row: 2 / 4;
 
     h2 {
-        background-color: rgba(255, 51, 54, 0.7);
-        background-image: linear-gradient(to right, rgba(255, 51, 54, 0.7), rgba(235, 133, 63, 0.7));
+        // background-image: linear-gradient(to right, rgba(255, 51, 54, 0.7), rgba(235, 133, 63, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -88,9 +112,8 @@
     grid-row: 4 / 6;
 
     h2 {
-        background-color: rgba(252, 220, 0, 0.7);
-        //background-color: rgba(235, 34, 107, 0.7);
-        background-image: linear-gradient(to right, rgba(235, 34, 107, 0.7), rgba(252, 220, 0, 0.7), rgba(253, 230, 78, 0.7));
+        // background-image: linear-gradient(to right, rgba(235, 34, 107, 0.7), rgba(252, 220, 0, 0.7), rgba(253, 230, 78, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -101,8 +124,8 @@
     grid-row: 4 / 8;
 
     h2 {
-        background-color: rgba(122, 134, 184, 0.7);
-        background-image: linear-gradient(to right, rgba(122, 134, 184, 0.7), rgba(91, 106, 167, 0.7));
+        // background-image: linear-gradient(to right, rgba(122, 134, 184, 0.7), rgba(91, 106, 167, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -118,8 +141,8 @@
     grid-row: 6 / 8;
 
     h2 {
-        background-color: rgba(59, 119, 171, 0.7);
-        background-image: linear-gradient(to right, rgba(29, 64, 93, 0.7), rgba(59, 119, 171, 0.7), rgba(246, 204, 17, 0.7));
+        // background-image: linear-gradient(to right, rgba(29, 64, 93, 0.7), rgba(59, 119, 171, 0.7), rgba(246, 204, 17, 0.7));
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -134,7 +157,8 @@
     grid-row: 8 / 9;
 
     h2 {
-        background-color: rgba(84, 169, 220, 0.7);
+        // background-color: rgba(84, 169, 220, 0.7);
+        background-color: rgba($dark-color, 0.7);
         top: 0;
         left: 0;
     }
@@ -198,6 +222,11 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: 1fr;
+    gap: 2em;
+
+    h1 {
+        margin-top: 0;
+    }
 }
 
 .side-bar {

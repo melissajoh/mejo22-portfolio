@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 html {
     font-size: 100%;
@@ -8,6 +9,24 @@ body {
     line-height: $base-line-height;
     font-family: 'Open Sans', sans-serif;
     color: $font-color;
+}
+
+.title h1 {
+    font-family: 'Bitter', serif;
+    font-size: 2.6em;
+    background-color: $title-color;
+    //-webkit-background-clip: text;
+    //-moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba($accent-color, 0.5) 3px 5px 1px;
+}
+
+.title p {
+    font-family: 'Yesteryear';
+    font-size: 1.5em;
+    color: $font-color;
+    margin-top: -1em;
 }
 
 h1 {

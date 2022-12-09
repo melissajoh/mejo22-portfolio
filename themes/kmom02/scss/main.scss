@@ -35,6 +35,12 @@ body {
     max-width: 900px;
     margin: auto;
     flex: 1 0 auto;
+
+    h1 {
+        background-color: $accent-color;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
 }
 
 h1,
@@ -67,24 +73,39 @@ em > img {
 .mepage {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: 415px;
     gap: 1em;
 }
 
 .meimg {
     grid-column: 1 / 2;
     grid-row: 1 / 1;
+
+    img {
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+    }
 }
 
 .metext {
     padding-left: 1em;
     grid-column: 2 / 3;
     grid-row: 1 / 1;
+    background-color: $text-background;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* -- Text -- */
+.text {
+    padding: 1em;
+    background-color: $text-background;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Responsiveness for index page */
 @media (max-width: 767px) {
     .mepage {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 
     .meimg {
