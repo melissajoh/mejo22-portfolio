@@ -1,6 +1,7 @@
 ---
 Logo: assets/img/logo1.png
-Tagline: Min portfolio
+#Logo: image/logo1.png
+Tagline: Portfolio
 Social:
     - title: GitHub
       url: https://github.com/melissajoh
