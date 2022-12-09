@@ -4,7 +4,7 @@ Description: Gallery page
 Template: gallery
 ---
 
-Galleri
+&#8212; Galleri &#8212;
 ==========================
 
 <div class="gallery-box img1">
@@ -13,6 +13,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img1.jpg?width=30%&q=50">
         <img src="%base_url%/image/img1.jpg&w=667" alt="Cat painting">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -22,6 +23,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img2.jpg?width=30%&q=50&crop-to-fit&area=20,20,5,20">
         <img src="%base_url%/image/img2.jpg&w=667&crop-to-fit&area=20,20,10,20" alt="Forrest painting">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -31,6 +33,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img3.jpg?width=20%&q=60&crop-to-fit&area=10,20,1,20">
         <img src="%base_url%/image/img3.jpg&w=667&crop-to-fit&area=10,20,1,20" alt="Tree stump painting">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -40,6 +43,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img4.jpg?width=20%&q=60&crop-to-fit&area=20,0,0,0">
         <img src="%base_url%/image/img4.jpg&w=667&crop-to-fit&area=20,0,0,0" alt="Cardboard sculpture">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -49,6 +53,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img5.jpg?width=20%&q=60&crop-to-fit&area=10,0,0,0">
         <img src="%base_url%/image/img5.jpg&w=667&crop-to-fit&area=15,0,5,0" alt="Cardboard sculpture">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -58,6 +63,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img6.jpg?width=20%&q=60&crop-to-fit&area=20,0,0,0">
         <img src="%base_url%/image/img6.jpg&w=667&crop-to-fit&area=20,0,0,0" alt="Cardboard sculpture">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -67,6 +73,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img7.jpg?width=30%&q=50&crop-to-fit&area=10,20,1,20">
         <img src="%base_url%/image/img7.jpg&w=667&q=50&crop-to-fit&area=10,20,1,20" alt="Charcoal drawing">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -76,6 +83,7 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img8.jpg?width=30%&q=50&crop-to-fit&area=10,20,1,20">
         <img src="%base_url%/image/img8.jpg&w=667&q=50&crop-to-fit&area=10,20,1,20" alt="Charcoal drawing">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>
 
@@ -85,5 +93,6 @@ Galleri
         <source media="(min-width: 668px)" srcset="%base_url%/image/img9.jpg?save-as=jpg&width=30%&q=50&crop-to-fit&area=10,35,1,5">
         <img src="%base_url%/image/img9.jpg?save-as=jpg&w=667&crop-to-fit&area=10,35,1,5" alt="Charcoal drawing">
     </picture>
+    <div class="overlay"></div>
 </a>
 </div>

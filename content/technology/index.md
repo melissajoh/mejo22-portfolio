@@ -4,13 +4,14 @@ Description: Page with technologies
 Template: technologies
 ---
 
-Technologies
+&#8212; Technologies &#8212;
 ==========================
 
 <div class="tech-box css">
 <!-- CSS -->
 <a href="%base_url%/technology/css"><h2>CSS</h2>
 <img src="%assets_url%/img/css1.jpg" alt="CSS image">
+<div class="overlay"></div>
 </a>
 </div>
 
@@ -18,6 +19,7 @@ Technologies
 <!-- Git -->
 <a href="%base_url%/technology/git"><h2>Git</h2>
 <img src="%assets_url%/img/git.jpg" alt="Git image">
+<div class="overlay"></div>
 </a>
 </div>
 
@@ -25,6 +27,7 @@ Technologies
 <!-- HTML -->
 <a href="%base_url%/technology/html"><h2>HTML</h2>
 <img src="%assets_url%/img/html.jpg" alt="Html image">
+<div class="overlay"></div>
 </a>
 </div>
 
@@ -32,6 +35,7 @@ Technologies
 <!-- JavaScript -->
 <a href="%base_url%/technology/javascript"><h2>JavaScript</h2>
 <img src="%assets_url%/img/js.jpg" alt="Javascript image">
+<div class="overlay"></div>
 </a>
 </div>
 
@@ -39,6 +43,7 @@ Technologies
 <!-- PHP -->
 <a href="%base_url%/technology/php"><h2>PHP</h2>
 <img src="%assets_url%/img/php.jpg" alt="PHP image">
+<div class="overlay"></div>
 </a>
 </div>
 
@@ -46,6 +51,7 @@ Technologies
 <!-- Python -->
 <a href="%base_url%/technology/python"><h2>Python</h2>
 <img src="%assets_url%/img/python.jpg" alt="python image">
+<div class="overlay"></div>
 </a>
 </div>
 
@@ -53,5 +59,6 @@ Technologies
 <!-- Sqlite -->
 <a href="%base_url%/technology/sqlite"><h2>Sqlite</h2>
 <img src="%assets_url%/img/sqlite.jpg" alt="sqlite image">
+<div class="overlay"></div>
 </a>
 </div>

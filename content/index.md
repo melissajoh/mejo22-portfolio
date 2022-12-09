@@ -5,13 +5,11 @@ Description: Detta är index-sidan
 icon: fas fa-home
 ---
 
-Hem
+&#8212; Hem &#8212;
 ==========================
 
 <div class="mepage">
 <div class="metext">
-<p>Hej! 
-<br>
 <br>
 Jag heter Melissa och är 27 år. Bor i Finspång med min sambo. Mina intressen är bland annat måleri, tecknande, TV-spel, att umgås med familj och sambo, och att vara ute i naturen. På bilden är jag och mina föräldrars peki-mops Hedvig.
 <br>
@@ -22,6 +20,11 @@ Går nu distanslinjen i Webb-programmering och har innan studerat på distans i 
 
 <div class="meimg">
 <!-- *![me](%assets_url%/img/me2.jpg)* -->
-<img src="%assets_url%/img/me2.jpg" alt="Image of me">
+<!-- <img src="%assets_url%/img/me2.jpg" alt="Image of me"> -->
+
+<picture>
+    <source media="(min-width: 668px)" srcset="%base_url%/image/me2.jpg?width=50%&q=80">
+    <img src="%base_url%/image/me2.jpg&w=667&q=80" alt="Image of me">
+</picture>
 </div>
 </div>
